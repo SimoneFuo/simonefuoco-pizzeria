@@ -1,0 +1,210 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaf3;
+    color: #2b2b2b;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(30, 30, 30, 0.95);
+    z-index: 1000;
+}
+
+header h1 {
+    color: #f4b942;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f4b942;
+}
+
+/* HOME */
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 60px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=2000&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#home h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c1121f;
+    transform: scale(1.05);
+}
+
+/* SEZIONI */
+
+section:not(#home) {
+    padding: 100px 8%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* MENU */
+
+#menu {
+    background-color: white;
+}
+
+#menu > div {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #fffaf3;
+    border-left: 5px solid #e63946;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+#menu h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+    color: #c1121f;
+}
+
+#menu p {
+    margin-bottom: 10px;
+}
+
+#menu strong {
+    color: #222;
+}
+
+/* CHI SIAMO */
+
+#chi-siamo {
+    text-align: center;
+    background-color: #f4b942;
+}
+
+#chi-siamo p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* CONTATTI */
+
+#contatti {
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+#contatti h2 {
+    color: #f4b942;
+}
+
+#contatti p {
+    margin: 15px;
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home h2 {
+        font-size: 40px;
+    }
+
+    #home p {
+        font-size: 18px;
+    }
+
+    section:not(#home) {
+        padding: 70px 20px;
+    }
+}
